@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>放大镜效果</title>
+    <style>
+        #pic{
+            height: 480px;
+            width: 480px;
+            margin:50px auto;
+            background-color: #ccc;
+            overflow:hidden;
+            border:3px solid #ccc;
+        }
+        #pic img{
+            margin:-240px 0 0 -240px;
+            transform:scale(.5);
+            transition:1s;
+        }
+        #pic img:hover{
+            transform:scale(.6);
+        }
+    </style>
+</head>
+<body>
+<div id="pic">
+    <img src="pic.jpg" alt="">
+</div>
+</body>
+</html>
